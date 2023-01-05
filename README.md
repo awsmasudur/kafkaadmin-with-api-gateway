@@ -26,6 +26,7 @@ aws lambda publish-layer-version --layer-name kafkaadmin --description "My layer
 
 
 ## Create a Lambda function to connect with your MSK cluster
+```
 aws lambda create-function \
 --function-name sayemkafkaadmin1 \
 --runtime python3.8 \
@@ -34,3 +35,4 @@ aws lambda create-function \
 --zip-file fileb://lambda_function.zip \
 --vpc-config SubnetIds=subnet-09d6643161a698bf3,subnet-01f2f547e9f6f8dd3,subnet-0f1b0c5191e0d1863,SecurityGroupIds=sg-0c3fd09fce77c4211 \
 --layers arn:aws:lambda:ap-southeast-2:781228881515:layer:kafkaadmin:6
+```
