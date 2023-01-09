@@ -77,7 +77,9 @@ aws lambda create-function \
 ## List topics 
 To list all the topics of your Kafka cluster enter the below URL on your browser:
 
+```
 REPLACE-WITH-INVOKE-URL/kafkaadmin?whichfunction=listtopics&bsrv=REPLACE-BOOTSTRAP-BROKERS
+```
 
 ** To get the bootstrap brokers name for MSK, follow [MSK documentation](https://docs.aws.amazon.com/msk/latest/developerguide/msk-get-bootstrap-brokers.html)
 
