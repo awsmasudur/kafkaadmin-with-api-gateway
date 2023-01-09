@@ -44,7 +44,6 @@ def lambda_handler(event, context):
 def getTopicConfig(topicname,bootstrapservers):
     try:
         admin_client = KafkaAdminClient(bootstrap_servers=bootstrapservers, client_id='test')
-        topicconfig=admin_client.describe_topics('AWSKafkaTutorialTopic')
         topicconfig = admin_client.describe_configs(config_resources=[ConfigResource(ConfigResourceType.TOPIC, topicname)])
         config_list = str(topicconfig)
         return {
@@ -102,6 +101,7 @@ def createTopic(bootstrapservers,topicname,retention,localretention,partition,rf
         admin_client = KafkaAdminClient(bootstrap_servers=bootstrapservers, client_id='test')
         
         if int(localretention) < int(retention):
+            #Tiered storage enabled topic
             topic_configs={'retention.ms': int(retention),'remote.storage.enable':'true','local.retention.ms':int(localretention)}
         else:
             topic_configs={'retention.ms': int(retention)}
