@@ -2,7 +2,7 @@
 Here is an example to connect with Amazon MSK using API Gateway and Lambda for Kafka admin operation (i.e. Create topic, list topics, describe topic).
 
 ## Prerequisite
-* A MSK cluster with Plaintext authentication
+* A MSK cluster with [Plaintext](https://docs.aws.amazon.com/msk/latest/developerguide/create-cluster.html) authentication
 
 ## Create a Lambda layer
 Follow the below steps to create a Lambda layer with [kafka-python](https://kafka-python.readthedocs.io/en/master/) client.
@@ -118,3 +118,6 @@ REPLACE-WITH-INVOKE-URL/kafkaadmin?whichfunction=createtopic&bsrv=REPLACE-BOOTST
 *Sample output:*
 
 ![img](images/img10.png)
+
+
+
