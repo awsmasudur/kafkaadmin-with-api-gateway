@@ -98,8 +98,9 @@ REPLACE-WITH-INVOKE-URL/kafkaadmin?whichfunction=describetopic&bsrv=REPLACE-BOOT
 
 ## Describe topic config:
 To describe a topic config enter the below url on your browser:
-
+```
 REPLACE-WITH-INVOKE-URL/kafkaadmin?whichfunction=gettopicconfig&bsrv=REPLACE-BOOTSTRAP-BROKERS&topicname=REPLACE-TOPIC-NAME
+```
 
 *Sample output:*
 
