@@ -116,7 +116,7 @@ REPLACE-WITH-INVOKE-URL/kafkaadmin?whichfunction=createtopic&bsrv=REPLACE-BOOTST
 ```
 
 ## Create a non-tiered storage topic:
-To create a Kafka topic without enabling tiered storage on MSK, enter the below URL on your browser. This will create a tiered storage enabled topic with 259200000ms data retention, 10 partitions and replication factor of 2. The create topic API only enables tiered storage feature if local retention is lower than overall topic retention:
+To create a Kafka topic without tiered storage on MSK, enter the below URL on your browser. This will create a Kafka topic with 259200000ms data retention, 10 partitions and a replication factor of 2. The create topic API only enables tiered storage feature if local retention is lower than overall topic retention:
 
 ```
 REPLACE-WITH-INVOKE-URL/kafkaadmin?whichfunction=createtopic&bsrv=REPLACE-BOOTSTRAP-BROKERS&topicname=REPLACE-TOPIC-NAME&retention=259200000&localretention=259200000&partition=10&rf=2
