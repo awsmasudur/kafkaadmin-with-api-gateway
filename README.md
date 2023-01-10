@@ -109,7 +109,7 @@ REPLACE-WITH-INVOKE-URL/kafkaadmin?whichfunction=gettopicconfig&bsrv=REPLACE-BOO
 ![img](images/img9.png)
 
 ## Create a tiered storage enabled topic:
-To create a [tiered storage](https://docs.aws.amazon.com/msk/latest/developerguide/msk-tiered-storage.html) enabled topic on MSK, enter the below URL on your browser. This will create a tiered storage enabled topic with 259200000ms total retention, 3600000ms location retention, 10 partitions and a replication factor of 2:
+Assuming you are using a tiered storage enabled cluster. To create a [tiered storage](https://docs.aws.amazon.com/msk/latest/developerguide/msk-tiered-storage.html) enabled topic on MSK, enter the below URL on your browser. This will create a tiered storage enabled topic with 259200000ms total retention, 3600000ms location retention, 10 partitions and a replication factor of 2:
 
 ```
 REPLACE-WITH-INVOKE-URL/kafkaadmin?whichfunction=createtopic&bsrv=REPLACE-BOOTSTRAP-BROKERS&topicname=REPLACE-TOPIC-NAME&retention=259200000&localretention=3600000&partition=10&rf=2
