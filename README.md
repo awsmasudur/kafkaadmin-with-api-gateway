@@ -1,4 +1,4 @@
-# Using API Gateway and Lambda with Amazon MSK for kafkaAdmin operation
+# Using API Gateway and Lambda with Amazon MSK for kafkaAdmin operations
 Here is an example to connect with Amazon MSK using API Gateway and Lambda for Kafka admin operation (i.e. Create topic, list topics, describe topic).
 
 ## Prerequisite
